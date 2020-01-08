@@ -3,12 +3,12 @@
 <ul class="breadcrumb">
 				<li>
 					<i class="icon-home"></i>
-					<a href="index.html">Home</a> 
+					<a href="{{URL::to('/')}}">Home</a> 
 					<i class="icon-angle-right"></i>
 				</li>
 				<li><a href="#">Tables</a></li>
 			</ul>
-			<p>
+            <p>
 				<?php 
 					$message = Session::get('message');
 					if($message){
@@ -27,22 +27,22 @@
 						<table class="table table-striped table-bordered bootstrap-datatable datatable">
 						  <thead>
 							  <tr>
-								  <th>Category ID</th>
-								  <th>Category Name</th>
-								  <th>Category Description</th>
+								  <th>Manufacture ID</th>
+								  <th>Manufacture Name</th>
+								  <th>Manufacture Description</th>
 								  <th>Status</th>
 								  <th>Actions</th>
 							  </tr>
 						  </thead>   
-                        @foreach($all_category_info as $v_category)
+                        @foreach($all_manufacture_info as $v_manufacture)
 						  <tbody>
 							<tr>
-								<td>{{$v_category->catagory_id}}</td>
-								<td class="center">{{$v_category->catagory_name}}</td>
-								<td class="center">{{$v_category->catagory_description}}</td>
+								<td>{{$v_manufacture->manufacture_id}}</td>
+								<td class="center">{{$v_manufacture->manufacture_name}}</td>
+								<td class="center">{{$v_manufacture->manufacture_description}}</td>
 
 								<td class="center">
-								@if($v_category->publication_status==1)
+								@if($v_manufacture->publication_status==1)
 								<span class="label label-success">Active</span>
 								@else
 								<span class="label label-danger">Deactive</span>
@@ -50,20 +50,20 @@
 								</td>
 
 								<td class="center">
-									@if($v_category->publication_status==1)
-									<a class="btn btn-danger" href="{{URL::to('/deactive_category/'.$v_category->catagory_id)}}">
+									@if($v_manufacture->publication_status==1)
+									<a class="btn btn-danger" href="{{URL::to('/deactive_manufacture/'.$v_manufacture->manufacture_id)}}">
 										<i class="halflings-icon white thumbs-down"></i>  
 									</a>
 									@else
-									<a class="btn btn-success" href="{{URL::to('/active_category/'.$v_category->catagory_id)}}">
+									<a class="btn btn-success" href="{{URL::to('/active_manufacture/'.$v_manufacture->manufacture_id)}}">
 										<i class="halflings-icon white thumbs-up"></i>  
 									</a>
 									@endif
 
-									<a class="btn btn-info" href="{{URL::to('/edit_category/'.$v_category->catagory_id)}}">
+									<a class="btn btn-info" href="{{URL::to('/edit_manufacture/'.$v_manufacture->manufacture_id)}}">
 										<i class="halflings-icon white edit"></i>  
 									</a>
-									<a class="btn btn-danger" href="{{URL::to('/delete_category/'.$v_category->catagory_id)}}" id="delete">
+									<a class="btn btn-danger" href="{{URL::to('/delete_manufacture/'.$v_manufacture->manufacture_id)}}" id="delete">
 										<i class="halflings-icon white trash"></i> 
 									</a>
 								</td>
