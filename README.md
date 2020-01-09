@@ -7,13 +7,26 @@ LaraShop is a small business e-commerce site which is devloped using 'laravel' a
 
 -[Entity relationship diagram of LaraShop Database](https://drive.google.com/open?id=135Ntccz2UXetjC-2yr5ugs-5Un8oCaLzMewQ05It7Zc)
 
-## Learning Laravel
+## Requirements to install LaraShop
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+1. php 7.2 or more updated.
+2. laravel version must in 5.9 to 6.2.
+3. xampp for windows OS (lammp for linux).
+4. composer package manager. 
+5. git for version control.
+6. any text editor like Visual studio code, atom, sublime text etc.
+[Note: for composer installation click here to read documentation.](https://getcomposer.org/)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## LaraShop Installation process on local machine
+First download the project by using git command: "git clone https://github.com/sarowar-al-amin/SuperShop-LaraShop-.git". Then open Xammp and run Apache server and Mysql  server. Edit .env.example to configure the project so that project can cope with apache server. Then run command "php artisan migrate" to connect the database.
+To start the project at this moment run "php artisan serve".
 
-## LaraShop Installation on local machine
+
+## LaraShop back-end view 
+
+
+
+## LaraShop fornt-end view
 
 
 
