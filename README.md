@@ -15,6 +15,8 @@ LaraShop is a small business e-commerce site which is devloped using 'laravel' a
 4. composer package manager. 
 5. git for version control.
 6. any text editor like Visual studio code, atom, sublime text etc.
+
+
 [Note: for composer installation click here to read documentation.](https://getcomposer.org/)
 
 ## LaraShop Installation process on local machine
