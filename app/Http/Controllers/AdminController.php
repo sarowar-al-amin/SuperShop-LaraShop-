@@ -16,6 +16,7 @@ class AdminController extends Controller
 {
     //
     public function index(){
+       
         return view('admin_login');
         // echo "Admin controller";
     }
@@ -24,9 +25,7 @@ class AdminController extends Controller
     //     echo "Sajib";
     // }
 
-    public function show_dashboard(){
-        return view('admin.dashboard');
-    }
+
 
     public function dashboard(Request $request){
         //echo "Ok";
